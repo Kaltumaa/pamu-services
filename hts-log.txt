@@ -1,0 +1,17 @@
+HTTrack3.49-2 launched on Tue, 19 Aug 2025 14:16:16 at https://mannatstudio.com/html/logzee/v3/index-3.html
+(winhttrack https://mannatstudio.com/html/logzee/v3/index-3.html -O "/Users/kaltumaomar/websites/logistic" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:19:19	Error: 	"Not Found" (404) at link https://mannatstudio.com/html/logzee/v3/rev-slider/assets/images/datcolor-100x50.jpg (from https://mannatstudio.com/html/logzee/v3/index-3.html)
+14:19:19	Error: 	"Not Found" (404) at link https://mannatstudio.com/html/logzee/v3/assets/css/owl.video.play.png (from https://mannatstudio.com/html/logzee/v3/assets/css/theme-plugins.min.css)
+14:19:19	Error: 	"Not Found" (404) at link https://mannatstudio.com/html/logzee/v3/assets/css/icon_top.png (from https://mannatstudio.com/html/logzee/v3/assets/css/style.css)
+14:19:19	Warning: 	File not parsed, looks like binary: https://mannatstudio.com/html/logzee/v3/assets/revolution/css/openhand.cur
+14:19:19	Warning: 	File not parsed, looks like binary: https://mannatstudio.com/html/logzee/v3/assets/revolution/css/closedhand.cur
+14:19:19	Error: 	"Not Found" (404) at link https://mannatstudio.com/html/logzee/v3/href (from https://mannatstudio.com/html/logzee/v3/blog-list.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 3 seconds : 183 links scanned, 178 files written (12751923 bytes overall) [9603230 bytes received at 52476 bytes/sec], 4510993 bytes transferred using HTTP compression in 78 files, ratio 26%, 30.5 requests per connection
+(4 errors, 2 warnings, 0 messages)

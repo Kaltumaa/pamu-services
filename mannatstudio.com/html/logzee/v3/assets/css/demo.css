@@ -1,0 +1,258 @@
+@import url("fonts.css");
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: #36415A;
+}
+
+#live-preview {
+    overflow: hidden;
+    background: #262B30;
+    color: #fff;
+    top: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    transition: 0.3s all;
+    z-index: 99999;
+    box-shadow: 0 5px 10px 0 rgba(35,50,56,0.2);
+}
+
+.live-preview__container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+#live-preview.close-preview .live-preview__container {
+    top: -70px;
+}
+
+.live-preview__logo {
+    float: left;
+    width: auto;
+}
+
+.live-preview__logo img {
+	height: auto;
+    max-width:100%;
+}
+
+.live-preview__info {
+    float: right;
+    width: auto;
+}
+
+.view-template-btn{
+    float: right;
+    background: #4c5173;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s all;
+    margin-top:-2px;
+}
+
+.view-template-btn:hover{
+    background: #0674EC;
+}
+
+.price {
+    float: left;
+    font-weight: 600;
+    color: #76d48f;
+    padding: 6px 10px;
+    font-size: 20px;
+}
+
+
+.device-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.device-list li {
+    float: left;
+}
+
+.device-list li .btn {
+    background: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0.6;
+    border: none;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.device-list li .btn:hover{
+    opacity: 1;
+}
+.device-list li .btn:focus{
+    outline: 0;
+}
+
+
+.live-preview__container .btn img {
+    height: 26px;
+    margin-right: 10px;
+}
+
+.live-preview__container .active .btn {
+    opacity: 1;
+}
+
+#iframelive.desktop-iframe {
+    width: 100%;
+    height: calc(100vh - 68px);
+    top: 64px;
+    position: relative;
+}
+
+#iframelive.desktop-iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#iframelive.tablet-iframe {
+    margin: 90px auto 20px;
+    padding: 121px 20px 20px 28px;
+    width: 766px;
+    height: 1060px;
+    background: url(../images/svg/demo-tablet.svg);
+    background-size: 100%;
+}
+
+#iframelive.tablet-iframe iframe {
+    width: 768px;
+    height: 966px;
+}
+
+#iframelive.phone-iframe {
+    margin: 90px auto 20px;
+    padding: 103px 20px 20px 14px;
+    width: 368px;
+    height: 689px;
+    background: url(../images/svg/demo-phone.svg);
+    background-size: 100%;
+}
+
+#iframelive.phone-iframe iframe {
+    width: 375px;
+    height: 617px;
+}
+
+#live-preview-modal .modal-dialog {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+#live-preview-modal .modal-dialog .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 100%;
+}
+
+.open-live-preview .wrapper {
+    z-index: 1051;
+}
+
+.demmhidm {
+	display:none;
+}
+
+@media(max-width: 992px){
+    .device-list{
+        display: none;
+    }
+
+}
+
+@media(max-width: 767px){
+    .live-preview__logo img {
+		height: auto;
+        max-width:100%;
+    }
+
+    .view-template-btn {
+        margin-left: 10px;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+
+    .live-preview__container {
+        padding: 14px 20px;
+    }
+
+    #iframelive.phone-iframe{
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 64px;
+    }
+
+    #iframelive.desktop-iframe {
+        height: calc(100vh - 68px);
+    }
+
+    .dropbtn {
+        margin-right: -15px;
+    }
+
+    #iframelive.tablet-iframe {
+        margin: 64px 0 0;
+        padding: 0;
+        width: 100%;
+        height: calc(100vh - 68px);
+        background: none;
+    }
+
+    #iframelive.tablet-iframe iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 380px){
+    .live-preview__logo {
+		height: auto;
+    	max-width:100%;
+        overflow: hidden;
+        margin-top: 1px;
+    }
+	.demmhid {
+		display:none;
+	}
+	.demmhidm {
+		display:block;
+	}
+}
